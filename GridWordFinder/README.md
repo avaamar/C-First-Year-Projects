@@ -1,20 +1,21 @@
-# Wordle Helper
+# Grid Word Finder
 
-A command-line assistant designed to help solve Wordle-style puzzles.  
-The program filters candidate words using known letter positions, required letters, and excluded characters.
+This program searches for target words in a two-dimensional character grid, both horizontally and vertically.  
+It constructs a solution grid that marks found words and records words that were not located. The code includes automated test cases to verify correct functionality.
 
 ## Features
-- Efficient filtering using C++ STL containers (`std::vector`, `std::string`)  
-- Supports file-based word lists and interactive input  
-- Modular functions for letter-position analysis and elimination logic  
+- Searches for words across rows and columns  
+- Uses efficient substring comparison and early-exit conditions  
+- Modular decomposition with helper functions for row and column operations  
+- Demonstrates use of `std::vector` and `std::string`  
 
 ## Learning Outcomes
-- Applying data filtering algorithms in C++  
-- Strengthening understanding of string manipulation and logic control  
-- Building clean, maintainable modular code  
+- Developing structured, test-driven C++ programs  
+- Improving code readability and modularity  
+- Understanding nested loops and memory-safe indexing  
 
 ## How to Run
-Compile and execute using:
+Compile and execute using any C++ compiler:
 ```bash
-g++ main.cpp -o wordlehelper
-./wordlehelper
+g++ main.cpp -o gridfinder
+./gridfinder
